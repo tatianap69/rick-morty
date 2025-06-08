@@ -1,1 +1,21 @@
-<p>personajes-detalles works!</p>
+<div *ngIf="!personajeDetalle">
+  <p class="text-center mt-4">Cargando detalles del personaje...</p>
+</div>
+<div *ngIf="personajeDetalle">
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-sm-6 offset-4 ">
+        <img
+          src="{{ personajeDetalle.image }}"
+          alt="{{ personajeDetalle.name }}"
+        />
+        <h1>{{ personajeDetalle.name }}</h1>
+        <p><strong>Género:</strong> {{ personajeDetalle.gender }}</p>
+        <p><strong>Especie:</strong> {{ personajeDetalle.species }}</p>
+        <p><strong>Estado:</strong> {{ personajeDetalle.status }}</p>
+        <p><strong>Lugar:</strong> {{ personajeDetalle.location.name }}</p>
+        <p><strong>Episodios:</strong> {{ personajeDetalle.episode.length }}</p>
+      </div>
+    </div>
+  </div>
+</div>
