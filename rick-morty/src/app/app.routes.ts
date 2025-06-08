@@ -5,6 +5,6 @@ import { PersonajesDetalles } from './componentes/personajes-detalles/personajes
 
 export const routes: Routes = [
     { path: '', component: PersonajesLista },
-    { path: 'personaje/:name', component: PersonajesDetalles },
+    { path: 'personajes/:id', component: PersonajesDetalles },
     { path: '**', component: PersonajesLista },
 ];
