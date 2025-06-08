@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div
+    id="menu-principal"
+    class="collapse navbar-collapse d-flex justify-content-between p-2"
+  >
+    <div class="d-flex align-items-center">
+      <a class="navbar-brand" href="#">Personajes</a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a
+            class="nav-link disabled"
+            href="#"
+            tabindex="-1"
+            aria-disabled="true"
+            >Ubicaciones</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link disabled"
+            href="#"
+            tabindex="-1"
+            aria-disabled="true"
+            >Episodios</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <form
+      id="buscador"
+      #buscadorForm="ngForm"
+      class="form-inline d-flex my-2 my-lg-0"
+      (ngSubmit)="buscarPersonaje()"
+    >
+      <input
+        class="form-control mr-2"
+        type="search"
+        placeholder="Buscar"
+        name="busqueda"
+        [(ngModel)]="nombreBusqueda"
+      />
+
+      <button class="btn btn-outline-success" type="submit">Buscar</button>
+    </form>
+  </div>
+</nav>
