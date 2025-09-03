@@ -1,14 +1,43 @@
-# Angiee Tatiana Paez
-# Prueba desarrollador front-end - Angular
+# Proyecto Angular - API Rick and Morty
 
-# API - Rick y Morty 
+Este proyecto es una aplicación web desarrollada con Angular que consume la API pública de Rick and Morty para mostrar información sobre los personajes de la serie animada.
 
-# Parámetros de la prueba
-- Explorador de personajes: mostrar lista paginada de personajes (nombre, especie, género, imagen, estado).
-- Búsqueda y filtros: por nombre, estado y género.
-- Detalle de personaje: mostrar detalles y episodios donde aparece.
-- Lista de favoritos: permitir agregar/quitar personajes (usando localStorage).
+## Características
 
-# Datos a tener en cuenta
-- El buscador solo funciona con el nombre del personaje.
-- El botón de buscar solo funciona si se da clic dos veces (sé que es un error, pero no entendí por qué sucedió).
+- Listado de personajes con paginación.
+- Búsqueda de personajes por nombre.
+- Detalles de cada personaje al hacer clic en su nombre.
+- Diseño responsivo para una mejor experiencia en dispositivos móviles.
+
+## Instalación
+
+1. Clona este repositorio:
+
+   ```bash
+   git clone https://github.com/tatianap69/rickmorty
+
+   ```
+
+2. Navega al directorio del proyecto:
+   ```bash
+   cd rickmorty
+   ```
+3. Instala las dependencias:
+   ```bash
+   npm install
+   ```
+4. Inicia la aplicación:
+   ```bash
+    ng serve
+   ```
+5. Abre tu navegador y visita `http://localhost:4200` para ver la aplicación en funcionamiento.
+
+## Tecnologías Utilizadas
+- Angular
+- TypeScript
+- HTML5
+- SCSS
+- API Rick and Morty
+
+## API Utilizada
+Este proyecto utiliza la API pública de Rick and Morty, que puedes encontrar en [https://rickandmortyapi.com/](https://rickandmortyapi.com/).
